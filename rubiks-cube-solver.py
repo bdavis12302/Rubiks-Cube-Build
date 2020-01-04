@@ -10,18 +10,19 @@ solvedOrange = ['o1', 'o2', 'o3', 'o4', 'o5', 'o6', 'o7', 'o8']
 solvedBlue = ['b1', 'b2', 'b3', 'b4', 'b5', 'b6', 'b7', 'b8']
 solvedGreen = ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8']
 
+#function that returns what each side(list) looks like, based on what letter you input
 def getSide(side):
-    if side == w:
+    if side == 'w':
         return cube[0]
-    elif side == r:
+    elif side == 'r':
         return cube[1]
-    elif side == y:
+    elif side == 'y':
         return cube[2]
-    elif side == o:
+    elif side == 'o':
         return cube[3]
-    elif side == b:
+    elif side == 'b':
         return cube[4]
-    elif side == g:
+    elif side == 'g':
         return cube[5]
 
 def solve(cube):
