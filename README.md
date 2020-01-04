@@ -1,1 +1,1 @@
-# Rubix-Cube-Build
+# Rubiks-Cube-Build
