@@ -52,6 +52,7 @@ def solve(cube):
             ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8']
         ]:
             solved = True
+            return 'Cube solved'
         else:
             solved = False
             # ^ temporary
