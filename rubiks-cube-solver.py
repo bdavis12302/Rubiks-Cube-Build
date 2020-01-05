@@ -25,6 +25,21 @@ def getSide(side):
     elif side == 'g':
         return cube[5]
 
+#function returns a peice 
+def getPeice(side, num):
+    if side == 'w':
+        return cube[0][num]
+    elif side == 'r':
+        return cube[1][num]
+    elif side == 'y':
+        return cube[2][num]
+    elif side == 'o':
+        return cube[3][num]
+    elif side == 'b':
+        return cube[4][num]
+    elif side == 'g':
+        return cube[5][num]
+
 def solve(cube):
     solved = False
     while solved == False:
