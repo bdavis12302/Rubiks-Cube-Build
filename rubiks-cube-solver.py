@@ -71,13 +71,13 @@ def getFirstLevel():
 def isFirstLevelCorrect(firstLevel):
     counter = 0
     if cube[2][6] == cube[2][7] == cube[2][8] == 'r':
-        counter++
+        counter += 1
     if cube[4][6] == cube[4][7] == cube[4][8] == 'o':
-        counter++
+        counter += 1
     if cube[5][6] == cube[5][7] == cube[5][8] == 'b':
-        counter++
+        counter += 1
     if cube[6][6] == cube[6][7] == cube[6][8] == 'o':
-        counter++
+        counter += 1
     if counter == 4:
         return True
     return False
