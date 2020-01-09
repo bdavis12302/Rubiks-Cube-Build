@@ -1,4 +1,5 @@
 #rubiks cube solver
+#read cube with white facing upwards and green facing towards you
 #color code: white=w, red=r, yellow=y, orange=o, blue=b, green=g
 #        white red yellow orange blue green
 cube = [ [  ], [  ], [  ], [  ], [  ], [  ] ]
@@ -12,7 +13,7 @@ solvedGreen = ['g1', 'g2', 'g3', 'g4', 'g5', 'g6', 'g7', 'g8']
 
 #Define side variable, based off of the cube[index]
 def defineSide():
-    for i in len(cube):
+    for i in range(len(cube)):
         if (i == 0):
             side = 'w'
         elif (i == 1):
@@ -97,5 +98,7 @@ def solve(cube):
             solved = True
             return 'Cube solved'
         else:
-            solved = False
-            # ^ temporary
+            daisySolved = False
+            while daisySolved == False:
+                if getSide('y') == []:
+                    pass
