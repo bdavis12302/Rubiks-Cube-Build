@@ -1,5 +1,8 @@
 #rubiks cube solver
-#read cube with white facing upwards and green facing towards you
+#12 edge pieces: (W2, O7), (W5, G4), (W7, R2), (W4, B5), (R4, B7), (R7, Y2), (R5, G7), (Y4, B4), (Y7, O2), (Y5, G5), (O4, B2), (O5, G2)
+#8 corner pieces: (W6, R1, B8), (W8, R3, G6), (W3, G1, O8), (W1, B3, O6), (Y1, R6, B6), (Y6, B1, O1), (Y3, R8, G8), (Y8, G3, O3)
+
+#read cube with white facing downwards and green facing towards you
 #color code: white=w, red=r, yellow=y, orange=o, blue=b, green=g
 #        white red yellow orange blue green
 cube = [ [  ], [  ], [  ], [  ], [  ], [  ] ]
@@ -82,6 +85,9 @@ def isFirstLevelCorrect(firstLevel):
     if counter == 4:
         return True
     return False
+
+def whiteCross(cube):
+    pass
 
 #The Solver Method
 def solve(cube):
