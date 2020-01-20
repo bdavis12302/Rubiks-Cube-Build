@@ -1,6 +1,6 @@
 #rubiks cube solver
-#12 edge pieces: (W2, O7), (W5, G4), (W7, R2), (W4, B5), (R4, B7), (R7, Y2), (R5, G7), (Y4, B4), (Y7, O2), (Y5, G5), (O4, B2), (O5, G2)
-#8 corner pieces: (W6, R1, B8), (W8, R3, G6), (W3, G1, O8), (W1, B3, O6), (Y1, R6, B6), (Y6, B1, O1), (Y3, R8, G8), (Y8, G3, O3)
+#12 edge pieces: (W2, O7), (W5, B4), (W7, R2), (W4, G5), (R4, G7), (R7, Y2), (R5, B7), (Y4, G4), (Y7, O2), (Y5, B5), (O4, G2), (O5, B2)
+#8 corner pieces: (W6, R1, G8), (W8, R3, B6), (W3, B1, O8), (W1, G3, O6), (Y1, R6, G6), (Y6, G1, O1), (Y3, R8, B8), (Y8, B3, O3)
 
 #read cube with white facing downwards and green facing towards you
 #color code: white=w, red=r, yellow=y, orange=o, blue=b, green=g
@@ -86,8 +86,21 @@ def isFirstLevelCorrect(firstLevel):
         return True
     return False
 
+def isWhiteCrossSolved(cube):
+    #use getSide() to return the white side, and check if the white cross is made
+    side = getSide('w')
+    if side[1] == 'w2' and side[3] == 'w4' and side[5] == 'w6' and side[7] == 'w8':
+        return True
+    else:
+        return False
+
 def whiteCross(cube):
-    pass
+    finished = False
+    while finished == False:
+        if  isWhiteCrossSolved(cube) == True:
+            finished = True
+        else:
+            
 
 #The Solver Method
 def solve(cube):
