@@ -100,7 +100,15 @@ def whiteCross(cube):
         if  isWhiteCrossSolved(cube) == True:
             finished = True
         else:
+            pass
             
+def firstTwoLayers(cube):
+    #count of how many corners have been completed, when count reaches 4, the first two layers are done
+    count = 0
+    while count < 4:
+        #1st algorithm case
+        if cube[4][2] == 'w8' and cube[1][1] == 'r5':
+            print("With {} side facing you, perform U, R, U', R'")
 
 #The Solver Method
 def solve(cube):
