@@ -107,7 +107,10 @@ def firstTwoLayers(cube):
     count = 0
     while count < 4:
         #1st algorithm case
-        if cube[4][2] == 'w8' and cube[1][1] == 'r5':
+        if (cube[4][2] == 'w8' and cube[1][1] == 'r5') or \
+            (cube[3][2] == 'w3' and cube[4][1] == 'b2') or \
+                (cube[5][2] == 'w1' and cube[3][1] == 'o4') or \
+                    (cube[1][2] == 'w6' and cube[5][1] == 'g7'):
             print("With {} side facing you, perform U, R, U', R'")
 
 #The Solver Method
