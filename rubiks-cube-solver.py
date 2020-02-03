@@ -117,8 +117,9 @@ def firstTwoLayers(cube):
         if (cube[4][1] == 'b7' and cube[1][0] == 'w8') or \
             (cube[3][1] == 'o5' and cube[4][0] == 'w3') or \
                 (cube[5][1] == '' and cube [3][0] == 'w1') or \
-                    (cube[1][1] == '' and cube [5][0] == 'w1') or \
+                    (cube[1][1] == '' and cube [5][0] == 'w1'):
             print("With {} side facing you, perform y', U', R', U, R")
+            count += 1
 
 
 #The Solver Method
